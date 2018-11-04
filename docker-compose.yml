@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+  mongo: 
+    ports: ["28018:27017"]
+    build:
+      context: "_deployment/mongodb"
