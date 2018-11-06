@@ -3,5 +3,8 @@ version: "2"
 services:
   mongo: 
     ports: ["28018:27017"]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: oneforall-test-user
+      MONGO_INITDB_ROOT_PASSWORD: oneforall-test-password
     build:
       context: "_deployment/mongodb"
